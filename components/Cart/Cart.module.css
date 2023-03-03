@@ -1,0 +1,65 @@
+.ifEmpty h2 {
+   color: white;
+}
+
+.container .ifEmpty a {
+   color: rgb(24, 124, 255);
+}
+
+.container .ifEmpty a:hover {
+   color: rgb(24, 124, 255);
+   text-decoration: underline;
+}
+
+.container .ifNotEmpty {
+   display: flex;
+   flex-direction: column;
+}
+
+.container .ifNotEmpty .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.container .ifNotEmpty .header h2 {
+   color: white;
+}
+
+.container .ifNotEmpty .header button {
+   padding: 8px 24px;
+   border-radius: 25px;
+   border: none;
+   background-color: rgb(24, 124, 255);
+   color: white;
+   cursor: pointer;
+   transition: .2s ease;
+}
+
+.container .ifNotEmpty .header button:hover {
+   background-color: rgb(0, 110, 255);
+   transition: .2s ease;
+}
+
+.container .ifNotEmpty .cartItems {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   margin: 25px 12px;
+}
+
+.container .ifNotEmpty .cartItem {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.container .ifNotEmpty .cartItem img {
+   width: 40px;
+}
+
+.container .ifNotEmpty .cartItem p {
+   font-size: 12px;
+   color: white;
+}
+

@@ -1,0 +1,81 @@
+.link {
+   text-decoration: none;
+}
+
+.container {
+   width: 325px;
+   height: 400px;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   padding: 25px;
+   line-height: 40px;
+   justify-content: space-between;
+   border-radius: 15px;
+   cursor: pointer;
+   transition: .2s ease-in;
+}
+
+.container h4 {
+   font-size: 24px;
+   color: black;
+}
+
+.container .imgContainer {
+   width: 175px;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+}
+
+.container .imgContainer img {
+   max-width: 100%;
+}
+
+.container .imgContainer button {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   height: 32px;
+   border: none;
+   border-radius: 20px;
+   transform: translateY(30px);
+   cursor: pointer;
+   transition: .3s ease-in;
+   opacity: 0;
+}
+
+.container div {
+   display: flex;
+   justify-content: space-between;
+   line-height: 20px;
+}
+
+.container div p {
+   font-size: 14px;
+   color: rgb(97, 97, 97);
+}
+
+.container .bottom button {
+   min-width: 60px;
+   height: 30px;
+   border-radius: 15px;
+   background-color: rgb(42, 92, 255);
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+
+.container:hover {
+   transform: scale(1.02);
+   transition: .2s ease-in;
+}
+
+.container:hover .imgContainer button {
+   transform: translateY(-20px);
+   opacity: 1;
+   transition: .3s ease-in;
+}

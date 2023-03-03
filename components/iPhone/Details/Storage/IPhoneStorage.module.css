@@ -1,0 +1,15 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+}
+
+.container > p {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.disabled {
+   pointer-events: none;
+   opacity: 0.4;
+}

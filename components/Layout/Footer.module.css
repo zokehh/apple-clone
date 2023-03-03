@@ -1,0 +1,51 @@
+.footer {
+   max-width: 1000px;
+   margin: 25px auto;
+   border-top: 1px solid lightgray;
+}
+
+.footer .footerGrid {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(4, minmax(150px, 250px));
+}
+
+.footer .footerItem {
+   display: flex;
+   flex-direction: column;
+   padding: 25px;
+   row-gap: 5px;
+}
+
+.footer .footerItem * {
+   width: fit-content;
+}
+
+.footer .footerItem h4 {
+   color: rgb(44, 44, 44);
+   margin-bottom: 12px;
+}
+
+.footer .footerItem a {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 300;
+}
+
+.footer .footerItem a:hover {
+   text-decoration: underline;
+}
+
+.footer .footnote {
+   width: 150px;
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer .footnote p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

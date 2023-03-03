@@ -1,0 +1,85 @@
+.container {
+   max-width: 1000px;
+   display: flex;
+   margin: 0 auto;
+   padding: 25px 100px;
+   border-bottom: 1px solid lightgray;
+   transition: .2s ease-in;
+}
+
+.container .image {
+   width: 100px;
+}
+
+.container .image img {
+   width: 100%;
+}
+
+.container .itemInfo {
+   width: 90%;
+   position: relative;
+   display: grid;
+   grid-template-areas: 
+   'model quantity price';
+   grid-template-columns: 50% 25% 25%;
+   align-items: center;
+}
+
+.container .itemInfo .model {
+   font-weight: bold;
+}
+
+.container .itemInfo .quantity {
+   text-align: center;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 8px;
+}
+
+.container .itemInfo .quantity button {
+   background-color: #2a6eff;
+   color: white;
+   width: 25px;
+   height: 25px;
+   border-radius: 5px;
+   font-size: 24px;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   user-select: none;
+}
+
+.container .itemInfo .quantity button.disabled {
+   pointer-events: none;
+   opacity: 0.4;
+}
+
+.container .itemInfo .quantity p {
+   font-size: 18px;
+   width: 25px;
+   text-align: center;
+   user-select: none;
+}
+
+.container .itemInfo .price {
+   text-align: right;
+}
+
+.container .itemInfo button.remove {
+   position: absolute;
+   bottom: 15px;
+   right: 5px;
+   background-color: transparent;
+   border: none;
+   color: #2a6eff;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.container .itemInfo button.remove:hover {
+   text-decoration: underline;
+}

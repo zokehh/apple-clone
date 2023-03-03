@@ -1,0 +1,141 @@
+.container {
+   background-color: #f7f7f7;
+}
+
+.iphone14pro {
+   width: 100%;
+   background-color: black;
+   height: 550px;
+   color: white;
+   text-align: center;
+   padding: 40px 0;
+   background-image: url('../../public/images/homepage/iphone14pro.jpg');
+   background-size: 700px;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+}
+
+.iphone14 {
+   width: 100%;
+   background-color: #fafafa;
+   height: 550px;
+   color: black;
+   text-align: center;
+   padding: 40px 0;
+   background-image: url('../../public/images/homepage/iphone14.jpg');
+   background-size: 700px;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+}
+
+.iphone14pro h1,
+.iphone14 h1 {
+   font-size: 40px;
+}
+
+.iphone14pro p,
+.iphone14 p {
+   font-size: 24px;
+   margin: 4px;
+}
+
+.iphone14pro a,
+.iphone14 a {
+   text-decoration: none;
+   color: rgb(0, 157, 255);
+}
+
+.iphone14pro a:hover,
+.iphone14 a:hover {
+   border-bottom: 2px solid rgb(0, 157, 255);
+}
+
+.recommended {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   box-sizing: content-box;
+   margin-bottom: 25px;
+}
+
+.recommended .item {
+   height: 450px;
+   line-height: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 35px 0;
+   margin: 4px;
+   cursor: pointer;
+}
+
+.recommended .item div {
+   font-size: 28px;
+}
+
+.recommended .item p {
+   font-size: 20px;
+}
+
+.recommended .item a {
+   text-decoration: none;
+   color: rgb(0, 157, 255);
+   line-height: 20px;
+}
+
+.recommended .item a:hover {
+   border-bottom: 1px solid rgb(0, 157, 255);
+}
+
+.recommended .watch {
+   background-color: black;
+   color: white;
+   background-image: url('../../public/images/homepage/watch8.png');
+   background-position: bottom center;
+   background-size: 600px;
+   background-repeat: no-repeat;
+}
+
+.recommended .watch div {
+   display: flex;
+   align-items: center;
+}
+
+.recommended .watch a {
+   margin-top: 6px;
+}
+
+.recommended .watch .sobriquet {
+   color: rgb(212, 26, 26);
+   font-size: 12px;
+   letter-spacing: .5px;
+   font-weight: bold;
+}
+
+.recommended .airpods {
+   background-color: black;
+   color: white;
+   background-image: url('../../public/images/homepage/airpodspro.webp');
+   background-position: bottom center;
+   background-size: 600px;
+   background-repeat: no-repeat;
+   line-height: 40px;
+}
+
+.recommended .airtag {
+   line-height: 40px;
+   background-color: white;
+   background-image: url('../../public/images/homepage/airtag.jfif');
+   background-position: 50% 65px;
+   background-size: 500px;
+   background-repeat: no-repeat;
+   overflow: hidden;
+}
+
+.recommended .valentinesday {
+   line-height: 40px;
+   background-color: #f6d8cf;
+   background-image: url('../../public/images/homepage/valentinesday.png');
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   background-size: 600px;
+}

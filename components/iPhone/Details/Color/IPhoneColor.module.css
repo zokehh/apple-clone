@@ -1,0 +1,34 @@
+.container > p {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.container > .iphone-color {
+   font-size: 18px;
+   margin: 16px 0;
+}
+
+.container .colors {
+   display: flex;
+   column-gap: .5rem;
+}
+
+.container .colors input[type="radio"] {
+   min-width: 30px;
+   min-height: 30px;
+   border-radius: 50%;
+   appearance: none;
+   background-color: #0071e3;
+   box-shadow: 0 0 2px gray inset;
+}
+
+.container .colors input[type="radio"]:hover {
+   border: 3px solid white;
+   outline: 1px solid gray;
+   cursor: pointer;
+}
+
+.container .colors input[type="radio"].active {
+   border: 3px solid white;
+   outline: 2px solid #0071e3;
+}

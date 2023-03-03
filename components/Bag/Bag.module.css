@@ -1,0 +1,118 @@
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.container .empty {
+   padding: 50px;
+   line-height: 35px;
+}
+
+.container .empty p {
+   color: gray;
+}
+
+.container .empty button {
+   width: 300px;
+   height: 45px;
+   background-color: rgb(24, 124, 255);
+   border: none;
+   border-radius: 10px;
+   color: white;
+   margin-top: 25px;
+   cursor: pointer;
+   margin-bottom: -15px;
+}
+
+.container .header {
+   text-align: center;
+   line-height: 35px;
+   border-bottom: 1px solid lightgray;
+   padding: 50px;
+}
+
+.container .header p {
+   font-size: 14px;
+   font-weight: 100;
+}
+
+.container .header button {
+   width: 200px;
+   height: 30px;
+   margin-top: 25px;
+   background-color: rgb(24, 124, 255);
+   border: none;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   transition: .2s ease;
+}
+
+.container .header button:hover {
+   background-color: rgb(0, 110, 255);
+   transition: .2s ease;
+}
+
+.checkout {
+   max-width: 700px;
+   position: relative;
+   left: 200px;
+   margin-top: 50px;
+}
+
+.checkout .pricing {
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem;
+   color: rgb(41, 40, 40);
+   padding-bottom: 20px;
+   border-bottom: 1px solid lightgray;
+   font-size: 14px;
+}
+
+.checkout .pricing div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.checkout .total {
+   padding: 25px 0;
+   display: flex;
+   flex-direction: column;
+   row-gap: 2.5rem;
+}
+
+.checkout .total > div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.checkout .total > div > div > h4 {
+   font-size: 18px;
+}
+
+.checkout .total > div > div > p {
+   font-size: 14px;
+   text-align: right;
+   color: rgb(160, 159, 159);
+}
+
+.checkout .total button {
+   width: 300px;
+   height: 40px;
+   border-radius: 10px;
+   color: white;
+   border: none;
+   background-color: rgb(24, 124, 255);
+   cursor: pointer;
+   position: relative;
+   left: 400px;
+   transition: .2s ease;
+}
+
+.checkout .total button:hover {
+   background-color: rgb(0, 110, 255);
+   transition: .2s ease;
+}

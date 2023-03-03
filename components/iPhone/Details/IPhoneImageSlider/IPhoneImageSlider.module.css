@@ -1,0 +1,49 @@
+.container {
+   max-width: 1200px;
+   position: relative;
+   transition: transform .4s ease-out;
+}
+
+.container .slider {
+   max-width: 1200px;
+   border-radius: 15px;
+   display: flex;
+   overflow: hidden;
+   position: relative;
+   transition: transform .4s ease-out;
+}
+
+.container img {
+   transition: transform .4s ease-out;
+   width: 100%;
+   height: auto;
+   user-select: none;
+}
+
+.container .buttons {
+   position: absolute;
+   width: 100%;
+   padding: 25px;
+   display: flex;
+   justify-content: space-between;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.container .buttons button {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: none;
+   font-size: 25px;
+   display: grid;
+   place-content: center;
+   background-color: rgb(122, 122, 122);
+   color: rgb(228, 225, 225);
+   cursor: pointer;
+}
+
+.hide {
+   visibility: hidden;
+   opacity: 0;
+}

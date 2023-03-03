@@ -1,0 +1,46 @@
+.summary {
+   width: 250px;
+   display: flex;
+   flex-direction: column;
+   font-size: 14px;
+}
+
+.summary .delivery {
+   font-weight: 100;
+   margin-bottom: 15px;
+   letter-spacing: .5px;
+}
+
+.summary a {
+   display: block;
+   text-decoration: none;
+   color: #0071e3;
+   font-weight: 400;
+}
+
+.summary .pickup {
+   margin-bottom: 40px;
+   letter-spacing: .5px;
+}
+
+.summary button {
+   height: 35px;
+   background-color: #0071e3;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.summary .indent {
+   text-indent: 20px;
+}
+
+.button {
+   position: relative;
+}
+
+.loading {
+   opacity: 0.6;
+   pointer-events: none;
+}

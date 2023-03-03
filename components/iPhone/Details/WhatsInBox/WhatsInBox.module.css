@@ -1,0 +1,39 @@
+.container {
+   max-width: 700px;
+   margin: 50px auto;
+   text-align: center;
+   position: relative;
+}
+
+.container h1 {
+   margin: 35px 0;
+}
+
+.container .imagebox {
+   border-radius: 15px;
+   width: 100%;
+   background-color: #fbfbfd;
+}
+
+.container .imagebox img:first-child {
+   width: 140px;
+}
+
+.container .imagebox img:nth-child(2) {
+   width: 75px;
+   margin-left: 125px;
+}
+
+.container .text {
+   margin: 12px 0;
+}
+
+.container .text p:nth-child(1) {
+   position: absolute;
+   left: 12rem;
+}
+
+.container .text p:nth-child(2) {
+   position: absolute;
+   right: 8rem;
+}

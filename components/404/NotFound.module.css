@@ -1,0 +1,16 @@
+.container {
+   max-width: 1920px;
+   text-align: center;
+   margin: 0 auto;
+   padding: 150px 50px;
+   line-height: 50px;
+}
+
+.container a {
+   text-decoration: none;
+   color: #0071e3;
+}
+
+.container a:hover {
+   text-decoration: underline;
+}

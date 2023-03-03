@@ -1,0 +1,27 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   row-gap: 6px;
+   width: 300px;
+}
+
+.container a {
+   text-decoration: none;
+   color: #0071e3;
+}
+
+.container a:hover {
+   text-decoration: underline;
+}
+
+.extraInfo {
+   margin-bottom: 25px;
+   color: rgb(87, 86, 86);
+}
+
+.line {
+   width: 250px;
+   height: 1px;
+   background-color: rgb(238, 237, 237);
+   margin: 25px 0;
+}

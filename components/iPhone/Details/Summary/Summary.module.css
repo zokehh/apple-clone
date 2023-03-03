@@ -1,0 +1,107 @@
+.container {
+   width: 100%;
+   height: 400px;
+   background-color: #f5f5f7;
+   box-shadow: 0 0 0 100vmax #f5f5f7;
+   clip-path: inset(0 -100vmax);
+   display: flex;
+   justify-content: space-between;
+   max-width: 1100px;
+   margin: 50px auto 0 auto;
+   padding: 50px;
+   position: relative;
+}
+
+.container .leftSide {
+   line-height: 35px;
+   max-width: 300px;
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.container .leftSide img {
+   position: absolute;
+   bottom: 0;
+   user-select: none;
+   width: 300px;
+}
+
+.container .center {
+   width: 300px;
+   height: 175px;
+}
+
+.container .center .modelAndPrice {
+   margin-bottom: 24px;
+   line-height: 25px;
+}
+
+.container .center .modelAndPrice:first-child {
+   font-size: 16px;
+   font-weight: 0;
+}
+
+.container .center .bonuses {
+   line-height: 25px;
+   border-bottom: 1px solid lightgray;
+   padding-bottom: 25px;
+}
+
+.container .center .bonuses a {
+   text-decoration: none;
+   color: #0071e3;
+}
+
+.container .icon {
+   display: flex;
+   align-items: center;
+   column-gap: 4px;
+   font-weight: 400;
+}
+
+.container .rightSide {
+   width: 250px;
+   display: flex;
+   flex-direction: column;
+   font-size: 14px;
+}
+
+.container .rightSide .delivery {
+   font-weight: 100;
+   margin-bottom: 15px;
+   letter-spacing: .5px;
+}
+
+.container .rightSide a {
+   display: block;
+   text-decoration: none;
+   color: #0071e3;
+   font-weight: 400;
+}
+
+.container .rightSide .pickup {
+   margin-bottom: 40px;
+   letter-spacing: .5px;
+}
+
+.container .rightSide button {
+   height: 35px;
+   background-color: #0071e3;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.container .rightSide .indent {
+   text-indent: 20px;
+}
+
+.addToCart {
+   position: relative;
+}
+
+.loading {
+   opacity: 0.6;
+   pointer-events: none;
+}

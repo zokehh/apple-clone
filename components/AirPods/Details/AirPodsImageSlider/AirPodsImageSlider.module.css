@@ -1,0 +1,25 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   user-select: none;
+}
+
+.container > img {
+   width: 400px;
+}
+
+.image-picker {
+   display: flex;
+   column-gap: 10px;
+}
+
+.image-picker  img {
+   width: 45px;
+   cursor: pointer;
+   border-bottom: 1px solid transparent;
+}
+
+.image-picker .active {
+   border-bottom: 1px solid lightgray;
+}
