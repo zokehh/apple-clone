@@ -29,7 +29,7 @@ const Authenticaiton = () => {
 
       setIsLoading(false)
          if (!result.error) {
-          router.push('/home')
+          router.push('/')
          }       
    } else {
     setIsLoading(true)

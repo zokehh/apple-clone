@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const Footer = () => {
    const router = useRouter() 
 
-   if (router.pathname === '/') {
+   if (router.pathname === '/auth') {
       return;
    }
 

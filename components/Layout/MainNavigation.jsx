@@ -18,7 +18,7 @@ const MainNavigation = () => {
 
   const cartLength = cartCtx.cartItems.length
 
-  if (router.pathname === "/") {
+  if (router.pathname === "/auth") {
     return;
   }
 
@@ -32,7 +32,7 @@ const MainNavigation = () => {
       <nav>
         <Link
           className={router.pathname === "/home" ? classes.activeLink : ""}
-          href="/home"
+          href="/"
           onClick={navCtx.hideNav}
         >
           <AiFillApple />
