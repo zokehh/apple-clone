@@ -4,9 +4,9 @@ import CartContextProvider from '../store/cart-context'
 import NavContextProvider from '../store/nav-context'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ session, Component, pageProps }) {
   return (
-    <SessionProvider>
+    <SessionProvider session={session}>
       <CartContextProvider>
         <NavContextProvider>
           <Layout>

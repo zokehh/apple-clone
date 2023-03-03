@@ -5,7 +5,7 @@ import { verifyPasswords } from '../../../helpers/password'
 
 export default NextAuth({
    session: {
-      jwt: true
+      jwt: true,
    },
    providers: [
       CredentialsProvider({
@@ -32,4 +32,13 @@ export default NextAuth({
          }
       })
    ],
+   
+   pages: {
+      signIn: '/auth',
+   },
+   
+
+
+   secret: process.env.NEXTAUTH_SECRET,
+   
 })
