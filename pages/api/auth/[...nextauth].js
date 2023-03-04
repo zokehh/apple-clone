@@ -17,14 +17,12 @@ export const authOptions = {
             
             if (!user) {
                client.close()
-               throw new Error('User does not exist!')
             }
             
             const arePasswordsValid = await verifyPasswords(credentials.password, user.password)
             
             if (!arePasswordsValid) {
                client.close()
-               throw new Error("Passwords don't match!")
             }
             
             client.close()
