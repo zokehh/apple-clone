@@ -37,12 +37,6 @@ export const authOptions = {
       signIn: '/auth',
    },
 
-   callbacks: {
-      authorized({ req , token }) {
-         if(token) return true // If there is a token, the user is authenticated
-      }
-   },
-
    secret: process.env.NEXTAUTH_SECRET,
 }
 
