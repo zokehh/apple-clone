@@ -8,3 +8,8 @@
 .container img {
    max-width: 100%;
 }
+
+.checkout {
+   width: 40px;
+   left: 90px;
+}

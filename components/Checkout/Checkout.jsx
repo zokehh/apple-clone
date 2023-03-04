@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useContext, useRef } from 'react'
+import { useContext, useRef, useState } from 'react'
 import { CartContext } from '../../store/cart-context'
+import AddToCartLoadingSpinner from '../LoadingSpinner/AddToCartLoadingSpinner'
 import classes from './Checkout.module.css'
 
 const CheckoutElement = () => {
+   const [isLoading, setIsLoading] = useState(false)
+
    const firstNameRef = useRef()
    const lastNameRef = useRef()
    const streetAddressRef = useRef()
@@ -26,6 +29,7 @@ const CheckoutElement = () => {
 
    const formSubmitHandler = async (event) => {
       event.preventDefault()
+      setIsLoading(true)
 
       const bodyData = {
          firstName: firstNameRef.current.value,
@@ -43,6 +47,7 @@ const CheckoutElement = () => {
          total: ctx.total
       }
 
+
       const response = await fetch('/api/order', {
          method: 'POST',
          body: JSON.stringify(bodyData),
@@ -52,6 +57,7 @@ const CheckoutElement = () => {
       })
       const data = await response.json()
 
+      setIsLoading(false)
       if (response.ok) {
          router.replace('/shop/success')
          setTimeout(() => {
@@ -130,7 +136,9 @@ const CheckoutElement = () => {
 
                <div className={classes.border}></div>
 
-               <button className={classes.button}>Confirm Order</button>
+               <button className={`${classes.button} ${isLoading ? classes.loading: ''}`}>
+                  {isLoading && <AddToCartLoadingSpinner checkout={true} />}Confirm Order
+               </button>
             </form>
          </div>
       </div>

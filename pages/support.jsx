@@ -1,4 +1,5 @@
-import { getSession } from "next-auth/react"
+import { getServerSession } from "next-auth"
+import { authOptions } from "./api/auth/[...nextauth]"
 
 const Support = () => {
    return (
@@ -9,7 +10,7 @@ const Support = () => {
 }
 
 export const getServerSideProps = async (context) => {
-   const session = await getSession({req: context.req})
+   const session = await getServerSession(context.req, context.res, authOptions)
    
    if (!session) {
       return {

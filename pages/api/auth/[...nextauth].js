@@ -3,7 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import { connectToDatabase } from '../../../helpers/db'
 import { verifyPasswords } from '../../../helpers/password'
 
-export default NextAuth({
+export const authOptions = {
    session: {
       jwt: true,
    },
@@ -36,9 +36,14 @@ export default NextAuth({
    pages: {
       signIn: '/auth',
    },
-   
 
+   callbacks: {
+      authorized({ req , token }) {
+         if(token) return true // If there is a token, the user is authenticated
+      }
+   },
 
    secret: process.env.NEXTAUTH_SECRET,
-   
-})
+}
+
+export default NextAuth(authOptions)

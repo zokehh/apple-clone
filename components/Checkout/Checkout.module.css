@@ -123,7 +123,7 @@
 
 .form .button {
    width: 350px;
-   background-color: #2a6eff;
+   background-color: #0071e3;
    height: 45px;
    color: white;
    border-radius: 10px;
@@ -131,8 +131,14 @@
    cursor: pointer;
    border-top: 1px solid lightgray;
    margin: 70px 0 30px 0;
+   position: relative;
 }
 
 .form .button:hover {
    background-color: #3b79ff;
+}
+
+.loading {
+   opacity: 0.6;
+   pointer-events: none;
 }

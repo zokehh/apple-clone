@@ -96,13 +96,13 @@ const IPhoneDetails = (props) => {
   }
 
   const addToCartHandler = () => {
-    const cartImage = `../images/iPhone/${data.imageLink}/${blankColor}Cart.png`
-    const bagImage = `../images/iPhone/${data.imageLink}/${blankColor}Bag.jfif`
+    const cartImage = `/images/iphone/${data.imageLink}/${blankColor}Cart.png`
+    const bagImage = `/images/iphone/${data.imageLink}/${blankColor}Bag.jfif`
 
     setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false)
-      router.replace('/home')
+      router.push('/')
       cartCtx.addToCart(cartImage, bagImage, fullModel, price)
     }, 500)
   }

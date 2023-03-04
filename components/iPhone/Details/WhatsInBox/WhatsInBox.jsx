@@ -7,8 +7,8 @@ const WhatsInBox = (props) => {
       <div className={classes.container}>
         <h1>What's in the Box</h1>
         <div className={classes.imagebox}>
-          <img src={`../images/iPhone/${imageLink}/${blankColor}inbox.jfif`} alt="" />
-          <img src={`../images/iPhone/cable.jfif`} alt="" />
+          <img src={`/images/iphone/${imageLink}/${blankColor}inbox.jfif`} alt="" />
+          <img src={`/images/iphone/cable.jfif`} alt="" />
         </div>
         <div className={classes.text}>
           <p>{model}</p>

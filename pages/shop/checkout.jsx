@@ -1,5 +1,6 @@
-import { getSession } from "next-auth/react"
+import { getServerSession } from "next-auth"
 import CheckoutElement from "../../components/Checkout/Checkout"
+import { authOptions } from "../api/auth/[...nextauth]"
 
 const Checkout = () => {
    return (
@@ -8,7 +9,7 @@ const Checkout = () => {
 }
 
 export const getServerSideProps = async (context) => {
-   const session = await getSession({req: context.req})
+   const session = await getServerSession(context.req, context.res, authOptions)
 
    if (!session) {
       return {

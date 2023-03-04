@@ -11,7 +11,7 @@ const Summary = (props) => {
         <div className={classes.leftSide}>
           <p className={classes.model}>Your new {model}.</p>
           <p className='gray'>Just the way you want it.</p>
-          <img src={`../images/iPhone/${imageLink}/${blankColor}Summary.jfif`} alt="" />
+          <img src={`/images/iphone/${imageLink}/${blankColor}Summary.jfif`} alt="" />
         </div>
 
         <div className={classes.center}>

@@ -10,7 +10,7 @@ export const DUMMY_IPHONES = [
 
       display: '6.7-inch display',
 
-      image: 'images/iPhone/14promax.webp',
+      image: '/images/iphone/14promax.webp',
 
       cable: 'USB-C to Lightning Cable',
 
@@ -53,40 +53,40 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '../images/iPhone/14-pro-max/image1.jfif',
+            src: '/images/iphone/14-pro-max/image1.jfif',
          },
          {
             id: 'l2',
-            src: '../images/iPhone/14-pro-max/image2.jfif',
+            src: '/images/iphone/14-pro-max/image2.jfif',
          },
          {
             id: 'l3',
-            src: '../images/iPhone/14-pro-max/image3.jfif',
+            src: '/images/iphone/14-pro-max/image3.jfif',
          },
          {
             id: 'l4',
-            src: '../images/iPhone/14-pro-max/image4.jfif',
+            src: '/images/iphone/14-pro-max/image4.jfif',
          }
       ],
       dp: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/deeppurple/deeppurple1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/deeppurple/deeppurple2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/deeppurple/deeppurple3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/deeppurple/deeppurple1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/deeppurple/deeppurple2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/deeppurple/deeppurple3.webp' }
       ],
       gold: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/gold/gold1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/gold/gold2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/gold/gold3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/gold/gold1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/gold/gold2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/gold/gold3.webp' }
       ],
       silver: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/silver/silver1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/silver/silver2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/silver/silver3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/silver/silver1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/silver/silver2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/silver/silver3.webp' }
       ],
       sb: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/spaceblack/spaceblack1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/spaceblack/spaceblack2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/spaceblack/spaceblack3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/spaceblack/spaceblack1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/spaceblack/spaceblack2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/spaceblack/spaceblack3.webp' }
       ],
    },
 
@@ -101,7 +101,7 @@ export const DUMMY_IPHONES = [
 
       display: '6.1-inch display',
 
-      image: 'images/iPhone/14pro.jpg',
+      image: '/images/iphone/14pro.jpg',
 
       cable: 'USB-C to Lightning Cable',
 
@@ -144,40 +144,40 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '../images/iPhone/14-pro-max/image1.jfif',
+            src: '/images/iphone/14-pro-max/image1.jfif',
          },
          {
             id: 'l2',
-            src: '../images/iPhone/14-pro-max/image2.jfif',
+            src: '/images/iphone/14-pro-max/image2.jfif',
          },
          {
             id: 'l3',
-            src: '../images/iPhone/14-pro-max/image3.jfif',
+            src: '/images/iphone/14-pro-max/image3.jfif',
          },
          {
             id: 'l4',
-            src: '../images/iPhone/14-pro-max/image4.jfif',
+            src: '/images/iphone/14-pro-max/image4.jfif',
          }
       ],
       dp: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/deeppurple/deeppurple1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/deeppurple/deeppurple2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/deeppurple/deeppurple3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/deeppurple/deeppurple1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/deeppurple/deeppurple2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/deeppurple/deeppurple3.webp' }
       ],
       gold: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/gold/gold1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/gold/gold2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/gold/gold3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/gold/gold1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/gold/gold2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/gold/gold3.webp' }
       ],
       silver: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/silver/silver1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/silver/silver2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/silver/silver3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/silver/silver1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/silver/silver2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/silver/silver3.webp' }
       ],
       sb: [
-         { id: 'dp1', src: '../images/iPhone/14-pro-max/spaceblack/spaceblack1.webp' },
-         { id: 'dp2', src: '../images/iPhone/14-pro-max/spaceblack/spaceblack2.webp' },
-         { id: 'dp3', src: '../images/iPhone/14-pro-max/spaceblack/spaceblack3.webp' }
+         { id: 'dp1', src: '/images/iphone/14-pro-max/spaceblack/spaceblack1.webp' },
+         { id: 'dp2', src: '/images/iphone/14-pro-max/spaceblack/spaceblack2.webp' },
+         { id: 'dp3', src: '/images/iphone/14-pro-max/spaceblack/spaceblack3.webp' }
       ],
    },
 
@@ -193,7 +193,7 @@ export const DUMMY_IPHONES = [
 
       display: '6.7-inch display',
 
-      image: 'images/iPhone/14plus.jpg',
+      image: '/images/iphone/14plus.jpg',
 
       cable: 'USB-C to Lightning Cable',
 
@@ -229,45 +229,45 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '../images/iPhone/14/image1.jfif',
+            src: '/images/iphone/14/image1.jfif',
          },
          {
             id: 'l2',
-            src: '../images/iPhone/14/image2.jfif',
+            src: '/images/iphone/14/image2.jfif',
          },
          {
             id: 'l3',
-            src: '../images/iPhone/14/image3.jfif',
+            src: '/images/iphone/14/image3.jfif',
          },
          {
             id: 'l4',
-            src: '../images/iPhone/14/image4.jfif',
+            src: '/images/iphone/14/image4.jfif',
          }
       ],
       blue: [
-         { id: 'blue1', src: '../images/iPhone/14/blue/blue1.jfif' },
-         { id: 'blue2', src: '../images/iPhone/14/blue/blue2.jfif' },
-         { id: 'blue3', src: '../images/iPhone/14/blue/blue3.jfif' }
+         { id: 'blue1', src: '/images/iphone/14/blue/blue1.jfif' },
+         { id: 'blue2', src: '/images/iphone/14/blue/blue2.jfif' },
+         { id: 'blue3', src: '/images/iphone/14/blue/blue3.jfif' }
       ],
       purple: [
-         { id: 'dp1', src: '../images/iPhone/14/purple/purple1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/purple/purple2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/purple/purple3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/purple/purple1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/purple/purple2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/purple/purple3.jfif' }
       ],
       midnight: [
-         { id: 'dp1', src: '../images/iPhone/14/midnight/midnight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/midnight/midnight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/midnight/midnight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/midnight/midnight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/midnight/midnight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/midnight/midnight3.jfif' }
       ],
       starlight: [
-         { id: 'dp1', src: '../images/iPhone/14/starlight/starlight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/starlight/starlight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/starlight/starlight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/starlight/starlight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/starlight/starlight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/starlight/starlight3.jfif' }
       ],
       red: [
-         { id: 'dp1', src: '../images/iPhone/14/red/red1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/red/red2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/red/red3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/red/red1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/red/red2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/red/red3.jfif' }
       ],
    },
 
@@ -282,7 +282,7 @@ export const DUMMY_IPHONES = [
 
       display: '6.1-inch display',
 
-      image: 'images/iPhone/14.jpg',
+      image: '/images/iphone/14.jpg',
 
       cable: 'USB-C to Lightning Cable',
 
@@ -318,45 +318,45 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '../images/iPhone/14/image1.jfif',
+            src: '/images/iphone/14/image1.jfif',
          },
          {
             id: 'l2',
-            src: '../images/iPhone/14/image2.jfif',
+            src: '/images/iphone/14/image2.jfif',
          },
          {
             id: 'l3',
-            src: '../images/iPhone/14/image3.jfif',
+            src: '/images/iphone/14/image3.jfif',
          },
          {
             id: 'l4',
-            src: '../images/iPhone/14/image4.jfif',
+            src: '/images/iphone/14/image4.jfif',
          }
       ],
       blue: [
-         { id: 'blue1', src: '../images/iPhone/14/blue/blue1.jfif' },
-         { id: 'blue2', src: '../images/iPhone/14/blue/blue2.jfif' },
-         { id: 'blue3', src: '../images/iPhone/14/blue/blue3.jfif' }
+         { id: 'blue1', src: '/images/iphone/14/blue/blue1.jfif' },
+         { id: 'blue2', src: '/images/iphone/14/blue/blue2.jfif' },
+         { id: 'blue3', src: '/images/iphone/14/blue/blue3.jfif' }
       ],
       purple: [
-         { id: 'dp1', src: '../images/iPhone/14/purple/purple1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/purple/purple2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/purple/purple3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/purple/purple1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/purple/purple2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/purple/purple3.jfif' }
       ],
       midnight: [
-         { id: 'dp1', src: '../images/iPhone/14/midnight/midnight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/midnight/midnight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/midnight/midnight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/midnight/midnight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/midnight/midnight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/midnight/midnight3.jfif' }
       ],
       starlight: [
-         { id: 'dp1', src: '../images/iPhone/14/starlight/starlight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/starlight/starlight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/starlight/starlight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/starlight/starlight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/starlight/starlight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/starlight/starlight3.jfif' }
       ],
       red: [
-         { id: 'dp1', src: '../images/iPhone/14/red/red1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/14/red/red2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/14/red/red3.jfif' }
+         { id: 'dp1', src: '/images/iphone/14/red/red1.jfif' },
+         { id: 'dp2', src: '/images/iphone/14/red/red2.jfif' },
+         { id: 'dp3', src: '/images/iphone/14/red/red3.jfif' }
       ],
    },
 
@@ -371,7 +371,7 @@ export const DUMMY_IPHONES = [
 
       display: '6.1-inch display',
 
-      image: 'images/iPhone/13.jpg',
+      image: '/images/iphone/13.jpg',
 
       cable: 'USB-C to Lightning Cable',
 
@@ -407,45 +407,45 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '../images/iPhone/14/image1.jfif',
+            src: '/images/iphone/14/image1.jfif',
          },
          {
             id: 'l2',
-            src: '../images/iPhone/14/image2.jfif',
+            src: '/images/iphone/14/image2.jfif',
          },
          {
             id: 'l3',
-            src: '../images/iPhone/14/image3.jfif',
+            src: '/images/iphone/14/image3.jfif',
          },
          {
             id: 'l4',
-            src: '../images/iPhone/14/image4.jfif',
+            src: '/images/iphone/14/image4.jfif',
          }
       ],
       blue: [
-         { id: 'blue1', src: '../images/iPhone/13/blue/blue1.jfif' },
-         { id: 'blue2', src: '../images/iPhone/13/blue/blue2.jfif' },
-         { id: 'blue3', src: '../images/iPhone/13/blue/blue3.jfif' }
+         { id: 'blue1', src: '/images/iphone/13/blue/blue1.jfif' },
+         { id: 'blue2', src: '/images/iphone/13/blue/blue2.jfif' },
+         { id: 'blue3', src: '/images/iphone/13/blue/blue3.jfif' }
       ],
       pink: [
-         { id: 'dp1', src: '../images/iPhone/13/pink/pink1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/pink/pink2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/pink/pink3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/pink/pink1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/pink/pink2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/pink/pink3.jfif' }
       ],
       midnight: [
-         { id: 'dp1', src: '../images/iPhone/13/midnight/midnight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/midnight/midnight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/midnight/midnight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/midnight/midnight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/midnight/midnight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/midnight/midnight3.jfif' }
       ],
       starlight: [
-         { id: 'dp1', src: '../images/iPhone/13/starlight/starlight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/starlight/starlight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/starlight/starlight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/starlight/starlight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/starlight/starlight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/starlight/starlight3.jfif' }
       ],
       green: [
-         { id: 'dp1', src: '../images/iPhone/13/green/green1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/green/green2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/green/green3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/green/green1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/green/green2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/green/green3.jfif' }
       ],
    },
 
@@ -460,7 +460,7 @@ export const DUMMY_IPHONES = [
 
       display: '5.4-inch display',
 
-      image: 'images/iPhone/13mini.jpg',
+      image: '/images/iphone/13mini.jpg',
 
       cable: 'USB-C to Lightning Cable',
 
@@ -496,45 +496,45 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '../images/iPhone/14/image1.jfif',
+            src: '/images/iphone/14/image1.jfif',
          },
          {
             id: 'l2',
-            src: '../images/iPhone/14/image2.jfif',
+            src: '/images/iphone/14/image2.jfif',
          },
          {
             id: 'l3',
-            src: '../images/iPhone/14/image3.jfif',
+            src: '/images/iphone/14/image3.jfif',
          },
          {
             id: 'l4',
-            src: '../images/iPhone/14/image4.jfif',
+            src: '/images/iphone/14/image4.jfif',
          }
       ],
       blue: [
-         { id: 'blue1', src: '../images/iPhone/13/blue/blue1.jfif' },
-         { id: 'blue2', src: '../images/iPhone/13/blue/blue2.jfif' },
-         { id: 'blue3', src: '../images/iPhone/13/blue/blue3.jfif' }
+         { id: 'blue1', src: '/images/iphone/13/blue/blue1.jfif' },
+         { id: 'blue2', src: '/images/iphone/13/blue/blue2.jfif' },
+         { id: 'blue3', src: '/images/iphone/13/blue/blue3.jfif' }
       ],
       pink: [
-         { id: 'dp1', src: '../images/iPhone/13/pink/pink1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/pink/pink2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/pink/pink3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/pink/pink1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/pink/pink2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/pink/pink3.jfif' }
       ],
       midnight: [
-         { id: 'dp1', src: '../images/iPhone/13/midnight/midnight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/midnight/midnight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/midnight/midnight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/midnight/midnight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/midnight/midnight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/midnight/midnight3.jfif' }
       ],
       starlight: [
-         { id: 'dp1', src: '../images/iPhone/13/starlight/starlight1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/starlight/starlight2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/starlight/starlight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/starlight/starlight1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/starlight/starlight2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/starlight/starlight3.jfif' }
       ],
       green: [
-         { id: 'dp1', src: '../images/iPhone/13/green/green1.jfif' },
-         { id: 'dp2', src: '../images/iPhone/13/green/green2.jfif' },
-         { id: 'dp3', src: '../images/iPhone/13/green/green3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/green/green1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/green/green2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/green/green3.jfif' }
       ],
    },
 ]

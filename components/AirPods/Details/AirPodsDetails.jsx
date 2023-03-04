@@ -14,7 +14,6 @@ const AirPodsDetails = () => {
    const airpodId = router.query.airpodsId
 
    const data = getAirPodsData(airpodId)
-   console.log(airpodId)
 
    if (!data) {
       return <p>Loading...</p>
@@ -30,7 +29,7 @@ const AirPodsDetails = () => {
       setIsLoading(true)
       setTimeout(() => {
          setIsLoading(false)
-         router.push('/home')
+         router.push('/')
          ctx.addToCart(cartImage, bagImage, model, price)
       }, 500)
    }

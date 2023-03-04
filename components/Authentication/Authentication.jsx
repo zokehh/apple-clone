@@ -28,9 +28,10 @@ const Authenticaiton = () => {
          })
 
       setIsLoading(false)
-         if (!result.error) {
-          router.push('/')
-         }       
+
+      if (!result.error) {
+        router.replace('/')
+      }       
    } else {
     setIsLoading(true)
       const response = await fetch("/api/auth/sign-up", {
