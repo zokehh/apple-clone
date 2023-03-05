@@ -423,29 +423,29 @@ export const DUMMY_IPHONES = [
          }
       ],
       blue: [
-         { id: 'blue1', src: '/images/iphone/13/blue/blue1.jfif' },
-         { id: 'blue2', src: '/images/iphone/13/blue/blue2.jfif' },
-         { id: 'blue3', src: '/images/iphone/13/blue/blue3.jfif' }
+         { id: 'blue1', src: '/images/iphone/13/blue/blue-i1.jfif' },
+         { id: 'blue2', src: '/images/iphone/13/blue/blue-i2.jfif' },
+         { id: 'blue3', src: '/images/iphone/13/blue/blue-i3.jfif' }
       ],
       pink: [
-         { id: 'dp1', src: '/images/iphone/13/pink/pink1.jfif' },
-         { id: 'dp2', src: '/images/iphone/13/pink/pink2.jfif' },
-         { id: 'dp3', src: '/images/iphone/13/pink/pink3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/pink/pink-i1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/pink/pink-i2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/pink/pink-i3.jfif' }
       ],
       midnight: [
-         { id: 'dp1', src: '/images/iphone/13/midnight/midnight1.jfif' },
-         { id: 'dp2', src: '/images/iphone/13/midnight/midnight2.jfif' },
-         { id: 'dp3', src: '/images/iphone/13/midnight/midnight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/midnight/midnight-i1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/midnight/midnight-i2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/midnight/midnight-i3.jfif' }
       ],
       starlight: [
-         { id: 'dp1', src: '/images/iphone/13/starlight/starlight1.jfif' },
-         { id: 'dp2', src: '/images/iphone/13/starlight/starlight2.jfif' },
-         { id: 'dp3', src: '/images/iphone/13/starlight/starlight3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/starlight/starlight-i1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/starlight/starlight-i2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/starlight/starlight-i3.jfif' }
       ],
       green: [
-         { id: 'dp1', src: '/images/iphone/13/green/green1.jfif' },
-         { id: 'dp2', src: '/images/iphone/13/green/green2.jfif' },
-         { id: 'dp3', src: '/images/iphone/13/green/green3.jfif' }
+         { id: 'dp1', src: '/images/iphone/13/green/green-i1.jfif' },
+         { id: 'dp2', src: '/images/iphone/13/green/green-i2.jfif' },
+         { id: 'dp3', src: '/images/iphone/13/green/green-i3.jfif' }
       ],
    },
 
