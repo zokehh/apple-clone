@@ -14,11 +14,9 @@
 email: test@test.com <br />
 password: test123
 <hr>
-<br>
 
 <h3>Technologies used in this project 🌨</h3>
 <p>React ❄️ NextJS ❄️ Context API ❄️ NextAuth ❄️ MongoDB ❄️ CSS Modules ❄️ Firebase</p>
-
 <hr>
 
 <h3>What I wanted to practice while working on this project:</h3>
