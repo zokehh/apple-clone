@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://w7.pngwing.com/pngs/80/462/png-transparent-apple-logo-business-apple-heart-computer-logo.png" width="300" />
+  <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" width="300" />
   <h1>Apple clone</h1>
 
   <a href="https://zokehh-apple-clone.vercel.app/">Live</a>
