@@ -12,7 +12,7 @@ export const authOptions = {
          name: 'credentials',
          async authorize(credentials) {
             const client = await connectToDatabase()
-            const usersCollection = client.db().collection('users3')
+            const usersCollection = client.db().collection('users')
             const user = await usersCollection.findOne({email: credentials.email})
             
             if (!user) {
