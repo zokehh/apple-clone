@@ -4,7 +4,8 @@
 
   <a href="https://zokehh-apple-clone.vercel.app/">Live</a>
 
-  ## To use the application you have to be logged in. Create your own account or use exsiting one for testing:
+  <h2>To use the application you have to be logged in.</h2>
+  <h2>Create your own account or use exsiting one for testing:</h2>
   email: test@test.com
   password: test123
 
