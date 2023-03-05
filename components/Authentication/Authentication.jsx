@@ -25,7 +25,9 @@ const Authenticaiton = () => {
           redirect: false,
           email: enteredEmail,
           password: enteredPassword
-         })
+       })
+
+      console.log(result)
 
       setIsLoading(false)
 
@@ -45,6 +47,9 @@ const Authenticaiton = () => {
          },
       });
       const data = await response.json();
+      
+      console.log(data)
+
       setIsLoading(false)
       if (!response.ok) {
         return;

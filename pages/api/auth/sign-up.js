@@ -34,8 +34,10 @@ const handler = async (req, res) => {
       password: hashedPassword
    })
 
+   console.log(result)
+
    client.close()
-   res.status(201).json({ message: 'Successfully created an account!' })
+   res.status(201).json({ message: 'Successfully created an account!', result })
 }
 
 export default handler
