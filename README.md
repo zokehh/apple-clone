@@ -19,7 +19,7 @@
   ## What I wanted to practice
 
   <ul>
-    <li>Managing multiple Aplication states with useContext API</li>
+    <li style="display: flex; align-items: center;">Managing multiple Aplication states with useContext API</li>
     <li>Storing data in MongoDB</li>
     <li>CSS Modules</li>
     <li>API Routes</li>
