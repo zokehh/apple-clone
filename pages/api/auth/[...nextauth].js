@@ -5,7 +5,7 @@ import { verifyPasswords } from '../../../helpers/password'
 
 export const authOptions = {
    session: {
-      jwt: true,
+      strategy: 'jwt',
    },
    providers: [
       CredentialsProvider({

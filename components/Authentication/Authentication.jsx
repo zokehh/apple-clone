@@ -27,8 +27,6 @@ const Authenticaiton = () => {
           password: enteredPassword
        })
 
-      console.log(result)
-
       setIsLoading(false)
 
       if (!result.error) {
@@ -48,8 +46,6 @@ const Authenticaiton = () => {
       });
       const data = await response.json();
       
-      console.log(data)
-
       setIsLoading(false)
       if (!response.ok) {
         return;

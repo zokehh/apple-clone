@@ -1,4 +1,4 @@
-import { createContext, useReducer, useState } from "react";
+import { createContext, useState } from "react";
 
 
 export const CartContext = createContext({
@@ -38,8 +38,6 @@ const CartContextProvider = (props) => {
             })
          }
       })
-
-      console.log(cartItems)
 
       setTotal(prevState => prevState + +price)
 
