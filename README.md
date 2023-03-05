@@ -21,7 +21,7 @@ password: test123
 
 <hr>
 
-<h3>What I wanted to practice in this project:</h3>
+<h3>What I wanted to practice while working on this project:</h3>
 <br>
   <p>-General working with MongoDB</p>
   <p>-Managing multiple React States with React Context API</p>
