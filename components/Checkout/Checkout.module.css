@@ -1,6 +1,7 @@
 .container {
    max-width: 1000px;
    margin: 0 auto;
+   zoom: 125%;
 }
 
 .empty {

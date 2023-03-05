@@ -4,4 +4,5 @@
    padding: 100px;
    display: flex;
    column-gap: 5rem;
+   zoom: 125%;
 }

@@ -8,4 +8,5 @@
    background-color: #f8f7f7;
    box-shadow: 0 0 0 100vmax #f8f7f7;
    clip-path: inset(0 -100vmax);
+   zoom: 125%;
 }
