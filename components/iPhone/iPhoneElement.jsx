@@ -1,9 +1,12 @@
 import classes from './iPhoneElement.module.css'
 import IPhone from './iPhone'
-import { DUMMY_IPHONES } from '../../data/iPhoneData'
 
-const IPhoneElement = () => {
-   const data = DUMMY_IPHONES
+const IPhoneElement = (props) => {
+   const { iphoneData } = props
+
+   if (!iphoneData) {
+      return <p>Loading...</p>
+   }
 
    return (
       <div className={classes.container}>
@@ -13,7 +16,7 @@ const IPhoneElement = () => {
             <p>All models. <span className={classes.gray}>Take your pick.</span></p>
          </div>
          <div className={classes['all-models']}>
-            {data.map(item => <IPhone key={item.id} items={item} />)}
+            {iphoneData.map(item => <IPhone key={item.id} items={item} />)}
          </div>
       </div>
    )

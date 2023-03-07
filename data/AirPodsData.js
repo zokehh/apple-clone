@@ -56,7 +56,7 @@ export const DUMMY_AIRPODS = [
    }
 ]
 
-export const getAirPodsData = (airpodsId) => {
+export const getAirPodsDetails = (airpodsId) => {
    const data = DUMMY_AIRPODS
 
    const airpodsDetails = data.find(item => item.link === airpodsId)

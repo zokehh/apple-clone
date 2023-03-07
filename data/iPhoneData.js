@@ -26,7 +26,7 @@ export const DUMMY_IPHONES = [
          { 
             id: 's1', 
             storage: { memory: '128', unit: 'GB' }, 
-            pricing: 'From $1099 or $45.79/mo.per month for 24 mo.months before trade‑in*',
+            pricing: 'From $1099 or $39.42/mo.per month for 24 mo.months before trade‑in*',
             price: 1099
          },
          { 
@@ -68,7 +68,7 @@ export const DUMMY_IPHONES = [
             src: '/images/iphone/14-pro-max/image4.jfif',
          }
       ],
-      dp: [
+      deeppurple: [
          { id: 'dp1', src: '/images/iphone/14-pro-max/deeppurple/deeppurple1.webp' },
          { id: 'dp2', src: '/images/iphone/14-pro-max/deeppurple/deeppurple2.webp' },
          { id: 'dp3', src: '/images/iphone/14-pro-max/deeppurple/deeppurple3.webp' }
@@ -83,7 +83,7 @@ export const DUMMY_IPHONES = [
          { id: 'dp2', src: '/images/iphone/14-pro-max/silver/silver2.webp' },
          { id: 'dp3', src: '/images/iphone/14-pro-max/silver/silver3.webp' }
       ],
-      sb: [
+      spaceblack: [
          { id: 'dp1', src: '/images/iphone/14-pro-max/spaceblack/spaceblack1.webp' },
          { id: 'dp2', src: '/images/iphone/14-pro-max/spaceblack/spaceblack2.webp' },
          { id: 'dp3', src: '/images/iphone/14-pro-max/spaceblack/spaceblack3.webp' }
@@ -159,7 +159,7 @@ export const DUMMY_IPHONES = [
             src: '/images/iphone/14-pro-max/image4.jfif',
          }
       ],
-      dp: [
+      deeppurple: [
          { id: 'dp1', src: '/images/iphone/14-pro-max/deeppurple/deeppurple1.webp' },
          { id: 'dp2', src: '/images/iphone/14-pro-max/deeppurple/deeppurple2.webp' },
          { id: 'dp3', src: '/images/iphone/14-pro-max/deeppurple/deeppurple3.webp' }
@@ -174,7 +174,7 @@ export const DUMMY_IPHONES = [
          { id: 'dp2', src: '/images/iphone/14-pro-max/silver/silver2.webp' },
          { id: 'dp3', src: '/images/iphone/14-pro-max/silver/silver3.webp' }
       ],
-      sb: [
+      spaceblack: [
          { id: 'dp1', src: '/images/iphone/14-pro-max/spaceblack/spaceblack1.webp' },
          { id: 'dp2', src: '/images/iphone/14-pro-max/spaceblack/spaceblack2.webp' },
          { id: 'dp3', src: '/images/iphone/14-pro-max/spaceblack/spaceblack3.webp' }
@@ -407,19 +407,19 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '/images/iphone/14/image1.jfif',
+            src: '/images/iphone/13/image1.jfif',
          },
          {
             id: 'l2',
-            src: '/images/iphone/14/image2.jfif',
+            src: '/images/iphone/13/image2.jfif',
          },
          {
             id: 'l3',
-            src: '/images/iphone/14/image3.jfif',
+            src: '/images/iphone/13/image3.jfif',
          },
          {
             id: 'l4',
-            src: '/images/iphone/14/image4.jfif',
+            src: '/images/iphone/13/image4.jfif',
          }
       ],
       blue: [
@@ -496,19 +496,19 @@ export const DUMMY_IPHONES = [
       images: [
          {
             id: 'l1',
-            src: '/images/iphone/14/image1.jfif',
+            src: '/images/iphone/13/image1.jfif',
          },
          {
             id: 'l2',
-            src: '/images/iphone/14/image2.jfif',
+            src: '/images/iphone/13/image2.jfif',
          },
          {
             id: 'l3',
-            src: '/images/iphone/14/image3.jfif',
+            src: '/images/iphone/13/image3.jfif',
          },
          {
             id: 'l4',
-            src: '/images/iphone/14/image4.jfif',
+            src: '/images/iphone/13/image4.jfif',
          }
       ],
       blue: [
@@ -546,3 +546,36 @@ export const getIPhoneDetails = (iphoneId) => {
 
    return iPhoneDetails
 }
+
+// export const getAllIPhones = async () => {
+//    const response = await fetch('https://apple-cb4f4-default-rtdb.firebaseio.com/iphone.json')
+//    const data = await response.json()
+
+//    const transformedData = Object.keys(data).map(iphoneKey => {
+//       const iphone = data[iphoneKey]
+//       const storageArray = Object.keys(iphone.storage).map(iphoneKey => ({
+//          id: iphoneKey,
+//          ...iphone.storage[iphoneKey]
+//       }))
+//       const colorsArray = Object.keys(iphone.colors).map(iphoneKey => ({
+//          id: iphoneKey,
+//          ...iphone.colors[iphoneKey]
+//       }))
+
+//       const colorImages = Object.keys(iphone.colorImages).map(iphoneKey => ({
+//          id: iphoneKey,
+//          colorImages[iphoneKey]: 'xd',
+
+//       }))
+
+//       return {
+//          id: iphoneKey,
+//          ...iphone,
+//          storage: storageArray,
+//          colors: colorsArray,
+//          colorImages
+//       }
+//    })
+
+//    return transformedData
+// }

@@ -1,17 +1,19 @@
 import AirPodsElemet from "../../components/AirPods/AirPodsElement"
 import { getServerSession } from "next-auth"
 import { getSession } from "next-auth/react"
+import { DUMMY_AIRPODS } from "../../data/AirPodsData"
 import { authOptions } from "../api/auth/[...nextauth]"
 
-const AirPods = () => {
+const AirPods = (props) => {
    return (
-      <AirPodsElemet />
+      <AirPodsElemet airpodsData={props.airpodsData} />
    )
 }
 
 export const getServerSideProps = async (context) => {
-   // const session = await getSession({req: context.req})
    const session = await getServerSession(context.req, context.res, authOptions)
+   // const session = await getSession({req: context.req})
+   const airpodsData = DUMMY_AIRPODS
 
    if (!session) {
       return {
@@ -24,7 +26,8 @@ export const getServerSideProps = async (context) => {
 
    return {
       props: {
-         session
+         session,
+         airpodsData
       }
    }
 }

@@ -1,19 +1,16 @@
 import { useRouter } from "next/router"
 import { useContext, useState } from "react"
-import { getAirPodsData } from "../../../data/AirPodsData"
 import { CartContext } from "../../../store/cart-context"
 import classes from './AirPodsDetails.module.css'
 import AirPodsImageSlider from "./AirPodsImageSlider/AirPodsImageSlider"
 import AirPodsInfo from "./AirPodsInfo/AirPodsInfo"
 import AirPodsSummary from "./AirPodsSummary/AirPodsSummary"
 
-const AirPodsDetails = () => {
+const AirPodsDetails = (props) => {
    const [isLoading, setIsLoading] = useState(false)
    const router = useRouter()
 
-   const airpodId = router.query.airpodsId
-
-   const data = getAirPodsData(airpodId)
+   const data = props.airpodsDetails
 
    if (!data) {
       return <p>Loading...</p>
@@ -28,8 +25,8 @@ const AirPodsDetails = () => {
       const cartImage = data.cartImage
       setIsLoading(true)
       setTimeout(() => {
-         setIsLoading(false)
          router.push('/')
+         setIsLoading(false)
          ctx.addToCart(cartImage, bagImage, model, price)
       }, 500)
    }
