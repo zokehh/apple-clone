@@ -42,3 +42,57 @@
    margin: 0 auto;
    row-gap: 2rem;
 }
+
+@media (max-width: 1800px) {
+   .iphone {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .form {
+      display: grid;
+      grid-template-areas:
+      'model storage'
+      'colorr storage';
+      place-content: center;
+      column-gap: 2rem;
+      margin-top: 50px;
+      row-gap: 5rem;
+   }
+
+   .form .model {
+      grid-area: model;
+   }
+   
+   .form .color {
+      grid-area: colorr;
+      margin-top: -125px;
+   }
+   
+   .form .storage {
+      grid-area: storage;
+   }
+}
+
+@media (max-width: 875px) {
+   .container {
+      padding: 25px 0;
+   }
+
+   .container .textInfo {
+      padding: 0 15px;
+   }
+   
+   .iphone {
+      flex-direction: column;
+   }
+
+   .form {
+      display: flex;
+   }
+
+   .form .color {
+      grid-area: colorr;
+      margin-top: 0px;
+   }
+}

@@ -47,3 +47,9 @@
    visibility: hidden;
    opacity: 0;
 }
+
+@media (max-width: 875px) {
+   .container .slider {
+      border-radius: 0;
+   }
+}

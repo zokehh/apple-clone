@@ -61,6 +61,10 @@
    position: relative;
 }
 
+.form .input {
+   max-width: 350px;
+}
+
 .form .input label {
    position: absolute;
    left: 15px;
@@ -74,7 +78,7 @@
 
 .form .input input {
    height: 45px;
-   width: 350px;
+   width: 100%;
    border-radius: 10px;
    border: 1px solid lightgray;
    text-indent: 15px;
@@ -89,16 +93,20 @@
    max-width: 350px;
    display: flex;
    justify-content: space-between;
+   column-gap: 10px;
+}
+
+.form .zipcodeAndCity div {
+   max-width: 175px;
+   position: relative;
 }
 
 .form .zipcodeAndCity .city {
    position: absolute;
-   left: 195px !important;
-
 }
 
 .form .zipcodeAndCity input {
-   width: 170px;
+   min-width: 100%;
 }
 
 .form > div input:focus {
@@ -122,8 +130,13 @@
    margin: 35px 0;
 }
 
-.form .button {
-   width: 350px;
+.form .buttonContainer {
+   position: relative;
+}
+
+.form .buttonContainer button {
+   width: 100%;
+   max-width: 350px;
    background-color: #0071e3;
    height: 45px;
    color: white;
@@ -135,11 +148,59 @@
    position: relative;
 }
 
+.form .buttonContainer div {
+   position: absolute;
+   top: 73px;
+   left: 75px;
+}
+
 .form .button:hover {
    background-color: #3b79ff;
 }
 
-.loading {
-   opacity: 0.6;
+.form .loading {
+   opacity: 0.6 !important;
    pointer-events: none;
+}
+
+@media (max-width: 692px) {
+   .checkout > h1 {
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 540px) {
+   .checkout > h1 {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 485px) {
+   .form .buttonContainer div {
+      left: 45px;
+   }
+}
+
+@media (max-width: 455px) {
+   .checkout > h1 {
+      font-size: 16px;
+   }
+
+   .form > h4 {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 410px) {
+   .header-checkout p:first-child {
+      font-size: 14px;
+   }
+
+   .header-checkout p:nth-child(2) {
+      font-size: 12px;
+   }
+
+   .form .buttonContainer div {
+      left: 15px;
+   }
 }

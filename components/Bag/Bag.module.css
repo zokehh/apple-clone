@@ -14,7 +14,8 @@
 }
 
 .container .empty button {
-   width: 300px;
+   width: 100%;
+   max-width: 300px;
    height: 45px;
    background-color: rgb(24, 124, 255);
    border: none;
@@ -38,7 +39,8 @@
 }
 
 .container .header button {
-   width: 200px;
+   width: 100%;
+   max-width: 300px;
    height: 30px;
    margin-top: 25px;
    background-color: rgb(24, 124, 255);
@@ -56,9 +58,8 @@
 
 .checkout {
    max-width: 700px;
-   position: relative;
-   left: 200px;
-   margin-top: 50px;
+   padding: 25px;
+   margin: 50px auto;
 }
 
 .checkout .pricing {
@@ -100,8 +101,12 @@
    color: rgb(160, 159, 159);
 }
 
+.checkout .total a {
+   max-width: 300px;
+}
+
 .checkout .total button {
-   width: 300px;
+   width: 100%;
    height: 40px;
    border-radius: 10px;
    color: white;
@@ -109,11 +114,34 @@
    background-color: rgb(24, 124, 255);
    cursor: pointer;
    position: relative;
-   left: 400px;
    transition: .2s ease;
 }
 
 .checkout .total button:hover {
    background-color: rgb(0, 110, 255);
    transition: .2s ease;
+}
+
+@media (max-width: 630px) {
+   .container .header h1 {
+      font-size: 24px;
+   }
+
+   .container .header p {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 680px) {
+   .container .empty {
+      padding: 25px;
+   }
+
+   .container .empty h1 {
+      font-size: 24px;
+   }
+
+   .container .empty p {
+      font-size: 14px;
+   }
 }

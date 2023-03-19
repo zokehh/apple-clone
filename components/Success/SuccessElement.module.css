@@ -10,3 +10,23 @@
 .container img {
    width: 100px;
 }
+
+@media (max-width: 815px) {
+   .container {
+      padding: 75px 0;
+   }
+}
+
+@media (max-width: 485px) {
+   .container h1 {
+      font-size: 24px;
+   }
+
+   .container img {
+      width: 50px;
+   }
+
+   .container p {
+      font-size: 14px;
+   }
+}

@@ -3,6 +3,8 @@ import classes from "./Authentication.module.css";
 import { signIn } from 'next-auth/react'
 import { useRouter } from "next/router";
 import LoginLoadingSpinner from "../LoadingSpinner/LoginLoadingSpinner";
+import { MdEmail } from 'react-icons/md'
+import { BiLockAlt } from 'react-icons/bi'
 
 const Authenticaiton = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -65,62 +67,48 @@ const switchLogInHandler = () => {
 return (
   <div className={classes.authWrapper}>
     <div className={classes.container}>
-        <div className={classes.authentication}>
-          <img className={classes.logo} src="logo.webp" alt="" />
-          <h2>{isLogin ? "Welcome back" : "Create an account"}</h2>
-          <p>
-            {isLogin
-              ? "Please enter your details"
-              : "Enter the fields below to get started"}
-          </p>
-          <form onSubmit={formSubmitHandler} className={classes.form}>
-            <div className={classes.inputbox}>
-              <input
-                ref={emailInputRef}
-                type="text"
-                placeholder="Enter your email"
-              />
-              <span className="material-icons">email</span>
-            </div>
+      <div className={classes.logo}>
+        <img src="logo.webp" />
+      </div>
 
-            <div className={classes.inputbox}>
-              <input
-                ref={passwordInputRef}
-                type="password"
-                placeholder="Enter your password"
-              />
-              <span className="material-icons">lock</span>
-            </div>
-
-            <button className={`${classes.signIn} ${isLoading ? classes.loading : ''}`}>{isLoading && <LoginLoadingSpinner />}{isLogin ? "Sign in" : "Sign up"}</button>
-          </form>
-          <p className={classes.or}>OR</p>
-          <div className={classes.authOptions}>
-            <div className={`${classes.authOption}`}>
-              <img src="google.png" alt="" />
-              <p>{isLogin ? "Continue" : "Register"} with Google</p>
-            </div>
-            <div className={`${classes.authOption}`}>
-              <img src="fb.webp" alt="" />
-              <p>{isLogin ? "Continue" : "Register"} with Facebook</p>
-            </div>
-            <div className={`${classes.authOption}`}>
-              <img src="logo.webp" alt="" />
-              <p>{isLogin ? "Continue" : "Register"} with Apple</p>
-            </div>
-          </div>
-          <p className={classes.bottomLink}>
-            {isLogin ? "Don't have an account? " : "Already have an account? "}
-            <button onClick={switchLogInHandler}>
-              {isLogin ? "Sign up" : "Sign in"}
-            </button>
-          </p>
+      <div className={classes.credentialsAuth}>
+        <div className={classes.email}>
+          <input placeholder="Enter your email" type="email" ref={emailInputRef} />
+          <label><MdEmail /></label>
         </div>
-        <div className={classes.image}>
-          <img src="iphone14.webp" alt="An image showing a iphone 14 pro max." />
+
+        <div className={classes.email}>
+          <input placeholder="Enter your password" type="email" ref={passwordInputRef} />
+          <label><BiLockAlt /></label>
+        </div>
+
+        <div className={`${classes.button} ${isLoading ? classes.loading : ''}`}>
+          <button onClick={formSubmitHandler}> {isLogin ? 'Sign in' : 'Sign up'} </button>
+          {isLoading && <LoginLoadingSpinner loading={isLoading ? true : false} />}
         </div>
       </div>
+
+      <p className={classes.or}>OR</p>
+
+      <div className={classes.authOptions}>
+        <div className={classes.authOption}>
+          <img src="google.png" /> {isLogin ? 'Continue' : 'Register' } with Google
+        </div>
+        <div className={classes.authOption}>
+          <img src="fb.webp" /> {isLogin ? 'Continue' : 'Register' } with Facebook
+        </div>
+        <div className={`${classes.authOption} ${classes.apple}`}>
+          <img src="logo.webp" /> {isLogin ? 'Continue' : 'Register' } with Apple
+        </div>
+      </div>
+
+      <div className={classes.bottom}>
+        <p>{!isLogin ? "Already have an account? " : "Don't you have an account? "} 
+           <span onClick={switchLogInHandler}>{isLogin ? 'Sign up' : 'Sign in'}</span>
+        </p>
+      </div>
     </div>
+  </div>
   );
 };
 

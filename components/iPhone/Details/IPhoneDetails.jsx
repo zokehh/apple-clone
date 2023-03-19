@@ -29,17 +29,31 @@ const IPhoneDetails = (props) => {
   const router = useRouter();
   const data = props.detailsData
 
-  const formattedColor = color.replace(' ', '').toLowerCase()
-
+  const transformedColor = color.toLowerCase().replace(' ', '')
+  
   useEffect(() => {
+
+    
+    const imagesLink = [
+      {
+        src : `/images/iphone/${data.imageLink}/${transformedColor}/${transformedColor}1.jfif`,
+        id: 'i1'
+      },
+      {
+        src : `/images/iphone/${data.imageLink}/${transformedColor}/${transformedColor}2.jfif`,
+        id: 'i2'
+      },
+      {
+        src : `/images/iphone/${data.imageLink}/${transformedColor}/${transformedColor}3.jfif`,
+        id: 'i3'
+      },
+    ]
+    
+    console.log(imagesLink)
     if (color !== "Select") {
-      setImages(data[formattedColor])
+      setImages(imagesLink)
     }
   }, [color])
-
-  // if (!data) {
-  //   return <p>Loading...</p>;
-  // }
 
   const setColorHandler = (color) => {
     setColor(color)
@@ -86,26 +100,32 @@ const IPhoneDetails = (props) => {
         <ImageSlider images={!images ? data.images : images} transition={transition} />
 
         <form className={classes.form}>
-          <IPhoneModel 
-            model={data.model} 
-            pricing={data.pricing} 
-            display={data.display} 
-          />
+        <div className={classes.model}>
+            <IPhoneModel 
+              model={data.model} 
+              pricing={data.pricing} 
+              display={data.display} 
+            />
+          </div>
 
-          <IPhoneColor 
-            color={color} 
-            colors={data.colors}
-            setColorHandler={setColorHandler} 
-          />
+          <div className={classes.color}>
+            <IPhoneColor 
+              color={color} 
+              colors={data.colors}
+              setColorHandler={setColorHandler}
+            />
+          </div>
 
-          <IPhoneStorage
-            color={color}
-            storageArray={data.storage}
-            storage={storage}
-            setStorageHandler={setStorageHandler}
-            setPrice={setPrice}
-            setMemory={setMemory}
-          />
+          <div className={classes.storage}>
+            <IPhoneStorage
+              color={color}
+              storageArray={data.storage}
+              storage={storage}
+              setStorageHandler={setStorageHandler}
+              setPrice={setPrice}
+              setMemory={setMemory}
+            />
+          </div>
         </form>
       </div>
       {isSummary && <Summary 

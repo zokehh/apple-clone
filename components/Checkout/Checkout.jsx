@@ -136,9 +136,10 @@ const CheckoutElement = () => {
 
                <div className={classes.border}></div>
 
-               <button className={`${classes.button} ${isLoading ? classes.loading: ''}`}>
-                  {isLoading && <AddToCartLoadingSpinner checkout={true} />}Confirm Order
-               </button>
+               <div className={`${classes.buttonContainer} ${isLoading ? classes.loading: ''}`}>
+                  <button className={`${classes.button}`}>Confirm Order</button>
+                  {isLoading && <AddToCartLoadingSpinner checkout={true} />}
+               </div>
             </form>
          </div>
       </div>

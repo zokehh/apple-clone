@@ -18,3 +18,9 @@
    color: rgb(48, 48, 48);
    font-weight: 100;
 }
+
+@media (max-width: 875px) {
+   .container {
+      padding: 10px;
+   }
+}

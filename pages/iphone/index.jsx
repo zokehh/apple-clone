@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth"
 import { getSession } from "next-auth/react"
 import IPhoneElement from "../../components/iPhone/iPhoneElement"
-import { DUMMY_IPHONES } from "../../data/iPhoneData"
+import { getAllIPhones } from "../../data/iPhoneData"
 import { authOptions } from "../api/auth/[...nextauth]"
 
 const iPhonePage = (props) => {
@@ -14,7 +14,8 @@ const iPhonePage = (props) => {
 
 export const getServerSideProps = async (context) => {
    // const session = await getSession({req: context.req})
-   const iphoneData = DUMMY_IPHONES
+   const iphoneData = await getAllIPhones()
+   
    const session = await getServerSession(context.req, context.res, authOptions)
    
    if (!session) {

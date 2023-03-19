@@ -1,172 +1,146 @@
+.authWrapper {
+   width: 100dvw;
+   height: 100dvh;
+   background-color: rgb(245, 245, 245);
+}
+
 .container {
    max-width: 1200px;
-   height: 800px;
-   background-color: white;
-   display: grid;
-   grid-template-columns: 50% 50%;
-   margin:  0 auto;
-   place-content: center;
+   height: 750px;
+   margin: auto;
+   text-align: center;
    border-radius: 15px;
-   position: absolute;
-   left: 0;
-   right: 0;
+   padding-top: 75px;
+   background-color: white;
+   position: relative;
    top: 50%;
    transform: translateY(-50%);
-   zoom: 125%;
 }
 
-.container .authentication {
-   display: flex;
-   flex-direction: column;
-   padding: 0 50px 50px 50px;
-   text-align: center;
+.container .logo {
+   max-width: 100px;
+   margin: 0 auto 25px auto;
 }
 
-.container .authentication .logo {
-   width: 75px;
-   margin: 0 auto 35px auto;
-}
-
-.container .authentication .form {
-   margin: 25px auto;
-   display: flex;
-   flex-direction: column;
-   width: 300px;
-   row-gap: 1rem;
-}
-
-.container .authentication .form .inputbox {
-   width: 300px;
-   position: relative;
-}
-
-.container .authentication .form input {
-   height: 35px;
-   border-radius: 5px;
-   border: 1px solid lightgray;
-   text-indent: 40px;
-   font-size: 14px;
+.container .logo img {
    width: 100%;
 }
 
-.container .authentication .form .inputbox span {
+.container .credentialsAuth div {
+   max-width: 300px;
+   margin: 0 auto;
+   position: relative;
+   margin-bottom: 12px;
+}
+
+.container .credentialsAuth div input {
+   width: 100%;
+   height: 40px;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+   text-indent: 40px;
+   font-size: 18px;
+}
+
+.container .credentialsAuth div label {
    position: absolute;
    left: 10px;
-   top: 5px;
+   top: 8px;
+   font-size: 24px;
    color: lightgray;
 }
 
-.container .authentication .form button {
-   height: 35px;
-   border-radius: 5px;
+.container .button {
+   position: relative;
+}
+
+.container .button div {
+   position: absolute;
+   top: 17px;
+}
+
+.container .credentialsAuth button {
+   max-width: 300px;
+   width: 100%;
+   height: 40px;
    background-color: black;
    color: white;
+   border-radius: 5px;
    cursor: pointer;
+   margin-top: 12px;
+   border: none;
+}
+
+.container .credentialsAuth .loading {
+   opacity: 0.6;
+   pointer-events: none;
 }
 
 .container .or {
-   font-size: 12px;
+   margin: 25px auto;
    position: relative;
+   max-width: 300px;
 }
+
 .container .or::before {
    content: '';
    position: absolute;
-   width: 150px;
+   width: 100px;
    height: 1px;
    background-color: lightgray;
-   left: 5rem;
-   top: .5rem;
+   top: 8px;
+   right: 2rem;
 }
 
 .container .or::after {
    content: '';
    position: absolute;
-   width: 150px;
+   width: 100px;
    height: 1px;
    background-color: lightgray;
-   right: 5rem;
-   top: .5rem;
+   top: 8px;
+   left: 2rem;
 }
 
-.container .authentication .authOptions {
+.container .authOptions {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
    row-gap: .5rem;
+}
+
+.container .authOptions .authOption {
+   max-width: 300px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   border: 1px solid lightgray;
+   border-radius: 10px;
+   column-gap: 1rem;
+   justify-content: center;
+   padding: 2px 0;
+   cursor: pointer;
+}
+
+.container .authOptions .authOption img {
+   width: 35px;
+}
+
+.container .authOptions .apple img {
+   width: 30px;
+}
+
+.container .authOptions .authOption:hover {
+   border-color: black;
+}
+
+.container .bottom {
    margin: 25px 0;
 }
 
-.container .authentication .authOption {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border: 1px solid lightgray;
-   border-radius: 5px;
-   width: 350px;
-   margin: 0 auto;
-   padding: 6px 0;
-   cursor: pointer;
-}
 
-.container .authentication .authOption img {
-   max-width: 30px;
-   max-height: 30px;
-   object-fit: cover;
-   margin-right: 15px;
-}
-
-.container .image {
-   max-width: 800px;
-   display: grid;
-   place-content: center;
-   margin-left: -100px;
-}
-
-.container .image img {
-   width: 100%;
-   object-fit: cover;
-}
-
-.bottomLink {
-   font-size: 12px;
-}
-
-.bottomLink button {
+.container .bottom span {
    font-weight: bold;
-   font-size: 12px;
-   background-color: transparent;
-   border: none;
    cursor: pointer;
-}
-
-.container .authentication .form .error:focus {
-   outline: none;
-}
-
-.container .authentication .form .inputbox p {
-   font-size: 12px;
-   color: rgb(224, 77, 77);
-   margin-top: 5px;
-}
-
-.container .authentication .form input.error {
-   border: 1px solid red;
-}
-
-.authWrapper {
-   width: 100dvw;
-   height: 100dvh;
-   background-image: linear-gradient(to right, #e9e0e9, #ddf2fd);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-}
-
-.signIn {
-   position: relative;
-}
-
-.loading {
-   opacity: 0.6;
-   user-select: none;
-   pointer-events: none;
 }

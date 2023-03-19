@@ -1,0 +1,153 @@
+.header {
+   height: 40px;
+   max-width: 900px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   z-index: 10;
+   position: relative;
+   background-color: white;
+}
+
+.header .logo {
+   font-size: 20px;
+   margin-left: 32px;
+   color: black;
+}
+
+.header ul {
+   display: flex;
+   align-items: center;
+   column-gap: 2rem;
+   position: relative;
+}
+
+.header ul li {
+   list-style: none;
+}
+
+.header ul li a {
+   font-size: 16px;
+   color: black;
+   text-decoration: none;
+}
+
+.header ul li a:hover {
+   text-decoration: underline;
+}
+
+.header .rightSideIcons {
+   margin-right: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 10px;
+   font-size: 20px;
+   color: rgb(0, 0, 0);
+}
+
+.header .rightSideIcons .bag {
+   cursor: pointer;
+}
+
+.header .rightSideIcons .menu {
+   display: none;
+   cursor: pointer;
+}
+
+.header .rightSideIcons .quantity {
+   position: absolute;
+   right: 28px;
+   top: 20px;
+   width: 16px;
+   height: 16px;
+   font-size: 12px;
+   display: grid;
+   place-content: center;
+   background-color: rgb(26, 25, 25);
+   color: white;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.header .cart {
+   position: absolute;
+   width: 100%;
+   top: 40px;
+   color: black !important;
+   transform: translateY(-120%);
+   background-color: white;
+   transition: .2s ease;
+   z-index: -1;
+}
+
+.header .cart.active {
+   transform: translateY(0%);
+   transition: .2s ease;
+}
+
+.header .logo.activeLink,
+.header ul li a.activeLink,
+.header .rightSideIcons.activeLink {
+   color: rgb(0, 0, 0);
+}
+
+@media (max-width: 824px) {
+   .header {
+      height: 60px;
+      position: sticky;
+      top: 0;
+   }
+
+   .header .cart {
+      top: 60px;
+   }
+
+   .header .logo.activeLink {
+      color: rgb(0, 0, 0);
+   }
+
+   .header ul {
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      height: 100dvh;
+      flex-direction: column;
+      background-color: rgb(236, 236, 236);
+      row-gap: 2rem;
+      padding-top: 40px;
+      transform: translateX(-100%);
+      transition: .2s ease;
+   }
+
+   .header ul.showed {
+      transform: translateX(0%);
+      transition: .2s ease;
+   }
+   
+   .header ul li a {
+      font-size: 24px;
+      color: rgb(33, 33, 46);
+   }
+
+   .header ul li a.activeLink {
+      color: rgb(109, 210, 243);
+   }
+
+   .header .rightSideIcons {
+      column-gap: 1.2rem;
+   }
+   
+   .header .rightSideIcons .menu,
+   .header .rightSideIcons .bag,
+   .header .logo {
+      display: block;
+      color: black;
+      font-size: 24px;
+   }
+
+   .header .rightSideIcons .quantity {
+      top: 30px;
+   }
+}

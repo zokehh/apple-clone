@@ -12,7 +12,7 @@ const IPhoneDetailsPage = (props) => {
 
 export const getServerSideProps = async (context) => {
    // const session = await getSession({req: context.req})
-   const iphoneDetails = getIPhoneDetails(context.query.iphoneId)
+   const iphoneDetails = await getIPhoneDetails(context.params.iphoneId)
    const session = await getServerSession(context.req, context.res, authOptions)
    
    if (!session) {

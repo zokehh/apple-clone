@@ -69,10 +69,6 @@ const BagElement = () => {
                </div>
             </div>
          </div>}
-
-         <div className={classes.recommended}>
-
-         </div>
       </div>
    )
 }

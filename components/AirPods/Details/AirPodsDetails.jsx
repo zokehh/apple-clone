@@ -42,10 +42,12 @@ const AirPodsDetails = (props) => {
             />
             <AirPodsSummary isLoading={isLoading} addToCartHandler={addToCartHandler} />
          </div>
-         <AirPodsImageSlider 
-            initialDetailsImage={data.initialDetailsImage} 
-            images={data.images}
-         />
+         <div className={classes.img}>
+            <AirPodsImageSlider 
+               initialDetailsImage={data.initialDetailsImage} 
+               images={data.images}
+            />
+         </div>
       </div>
    )
 }

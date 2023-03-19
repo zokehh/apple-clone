@@ -1,5 +1,6 @@
 .video {
    max-width: 1200px;
+   height: 550px;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
@@ -7,11 +8,12 @@
    align-items: center;
    position: relative;
    color: white;
-}
-
-.video video {
-   width: 100%;
+   background-image: url('/images/airpods/large.gif');
+   background-size: 1000px;
+   background-repeat: no-repeat;
+   background-size: cover;
    border-radius: 25px;
+   background-position: center;
 }
 
 .video h1 {
@@ -51,4 +53,27 @@
 
 .video .video-links a:hover {
    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+   .video {
+      height: 450px;
+   }
+}
+
+@media (max-width: 740px) {
+   .video {
+      height: 500px;
+      max-width: 350px;
+   }
+
+   .video .video-info {
+      transform: translateX(0);
+      bottom: 75px;
+      top: initial;
+   }
+
+   .video .video-info h1 {
+      font-size: 52px;
+   }   
 }

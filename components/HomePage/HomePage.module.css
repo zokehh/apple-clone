@@ -140,3 +140,36 @@
    background-position: center bottom;
    background-size: 600px;
 }
+
+@media (max-width: 700px) {
+   .iphone14pro {
+      background-size: 500px;
+      height: 450px;
+   }
+}
+
+@media (max-width: 824px) {
+   .recommended {
+      grid-template-columns: 100%;
+   }
+}
+
+@media (max-width: 475px) {
+   .recommended .valentinesday,
+   .recommended .watch,
+   .recommended .airpods,
+   .recommended .airtag {
+      background-size: 400px;
+      height: 375px;
+   }
+
+   .iphone14pro {
+      background-size: 375px;
+      height: 400px;
+   }
+
+   .iphone14 {
+      background-size: 550px;
+      height: 475px;
+   }
+}

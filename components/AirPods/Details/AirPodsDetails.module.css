@@ -1,8 +1,29 @@
 .container {
    max-width: 1000px;
    margin: 0 auto;
-   padding: 100px;
+   padding: 50px;
    display: flex;
+   justify-content: center;
+   align-items: center;
    column-gap: 5rem;
    zoom: 125%;
+}
+
+@media (max-width: 960px) {
+   .container {
+      display: grid;
+      grid-template-areas:
+      'img'
+      'info';
+      row-gap: 2rem;
+      place-items: center;
+   }
+
+   .container .informations {
+      grid-area: info;
+   }
+
+   .container .img {
+      grid-area: img;
+   }
 }

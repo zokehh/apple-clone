@@ -83,3 +83,50 @@
 .container .itemInfo button.remove:hover {
    text-decoration: underline;
 }
+
+@media (max-width: 860px) {
+   .container {
+      padding: 25px;
+   }
+}
+
+@media (max-width: 760px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .container .image {
+      width: auto;
+      max-width: 150px;
+   }
+
+   .container .itemInfo {
+      grid-template-areas: 
+      'model model'
+      'quantity price';
+      grid-template-columns: auto;
+      max-width: 250px;
+      row-gap: 2rem;
+   }
+
+   .container .itemInfo .model {
+      grid-area: model;
+      text-align: center;
+   }
+
+   .container .itemInfo .quantity {
+      grid-area: quantity;
+   }
+
+   .container .itemInfo .price {
+      grid-area: price;
+      position: relative;
+      top: -5px;
+   }
+
+   .container .itemInfo button.remove {
+      bottom: -10px;
+   }
+}

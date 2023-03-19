@@ -37,3 +37,22 @@
    position: absolute;
    right: 8rem;
 }
+
+@media (max-width: 1024px) {
+   .container .text {
+      display: none;
+   }
+}
+
+@media (max-width: 550px) {
+   .container .imagebox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .container .imagebox img:nth-child(2) {
+      margin-left: 0;
+   }
+}

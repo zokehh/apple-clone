@@ -5,9 +5,7 @@ import { authOptions } from "./api/auth/[...nextauth]"
 
 const Auth = () => {
   return (
-    <div>
-      <Authenticaiton />
-    </div>
+    <Authenticaiton />
   )
 }
 

@@ -1,10 +1,10 @@
 .container {
-   max-width: 30px;
    position: absolute;
    top: 0;
    left: 90px;
 }
 
 .container img {
-   max-width: 100%;
+   width: 100%;
+   max-width: 30px;
 }
